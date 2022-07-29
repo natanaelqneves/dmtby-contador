@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-<link rel="stylesheet" href="/dmtran-contador/public/style.css"></link>
+import './Contador.css'
 export default class Contador extends Component {
 
     constructor() {
@@ -39,19 +39,29 @@ export default class Contador extends Component {
     render () {
         const {carro, moto, onibus, carreta} = this.state
         return (
-            <div>
-                <h1>CARRO: {carro} </h1>
-                <h1>MOTO: {moto} </h1>
-                <h1>ÔNIBUS, CAMINHÃO: {onibus} </h1>
-                <h1>CARRETA: {carreta} </h1>
+        <div className="container">  
 
-                <button id="carro" onClick={() => this.setCarro()}>1 = CARRO</button>
-                <button id="moto" onClick={() => this.setMoto()}>2 = MOTO</button>
-                <button id="onibus" onClick={() => this.setOnibus()}>3 = ONIBUS E CAMINHÃO</button>
-                <button id="carreta" onClick={() => this.setCarreta()}>4 = CARRETA</button>
-                <button id="zerar" onClick={() => this.setZero()}>Z = ZERAR</button>
+        <div>
             
+        </div>
+
+        <div>                 
+            <h1>1 - CARRO: {carro} </h1>
+            <h1>2 - MOTO: {moto} </h1>
+            <h1>3 - ÔNIBUS, CAMINHÃO: {onibus} </h1>
+            <h1>4 - CARRETA: {carreta} </h1>        
+        </div>
+   
+                
+            <div>
+                <button id="carro" onClick={() => this.setCarro()}>CARRO</button>
+                <button id="moto" onClick={() => this.setMoto()}>MOTO</button>
+                <button id="onibus" onClick={() => this.setOnibus()}>CAMINHÃO</button>
+                <button id="carreta" onClick={() => this.setCarreta()}>CARRETA</button>
+                <button id="zerar" onClick={() => this.setZero()}>Z ZERAR</button>
+    
             </div>
+        </div>    
         )
     }
 }
