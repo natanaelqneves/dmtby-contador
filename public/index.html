@@ -44,6 +44,9 @@
       if (event.keyCode == 100)
       btn = document.querySelector("#carreta");
 
+      if (event.keyCode > 100 || event.keyCode < 97)
+      btn = null;
+
       btn.click();
       console.log(`${keyCode}`);
 });
