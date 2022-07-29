@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/contador/static/js/main.48120121.js",
+    "main.js": "/contador/static/js/main.cf9d3e67.js",
     "index.html": "/contador/index.html",
-    "main.48120121.js.map": "/contador/static/js/main.48120121.js.map"
+    "main.cf9d3e67.js.map": "/contador/static/js/main.cf9d3e67.js.map"
   },
   "entrypoints": [
-    "static/js/main.48120121.js"
+    "static/js/main.cf9d3e67.js"
   ]
 }
